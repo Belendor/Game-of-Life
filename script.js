@@ -17,7 +17,7 @@ let populationSize = 15
 let daysCount = 1
 let positionLog = []
 let bordSize = 20
-let evoliutionSpeed = 1000
+let evoliutionSpeed = 100
 
 
 population.oninput = function (){
