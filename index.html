@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of life</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="landing">
+        <div class="landing-box">
+          <label for="population">Population %: </label>
+          <input id="population" name="population" type="range" min="1" max="100" value="15">
+          <p class="population-text">15</p>
+    
+          <label for="population %">Land size: </label>
+          <input id="land" name="land" type="range" min="1" max="100" value="20">
+          <p class="land-text">20</p>
+  
+          <label for="evoliution">Evoliution speed </label>
+          <input id="evoliution" name="evoliution" type="range" min="1" max="100" value="80">
+          <p class="evoliution-text">1000 ms/day</p>
+  
+          <button onclick="startIteration(); removeLanding()">Start</button>
+        </div>
+      </div>
+      <button id="restart" onclick=" reload()">Restart</button>
+      <div class="dayCount"></div>
+      <div class="game"></div> 
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
