@@ -51,10 +51,6 @@ evoliution.oninput = function (){
     evoliutionSpeed = 5000 - (4900*(currentValue/100)) 
     evoliutionText.innerHTML = Math.floor(evoliutionSpeed) + " ms/day"
 
-    daysCount = 1
-    positionLog = []
-    game.innerHTML = ""
-    addCells()
 }
 
 
